@@ -1,12 +1,19 @@
 <script setup>
 // import AppVue from '../App.vue';
-const ImgUrl = Image 
-document.getElementById
+//let response = await
+fetch('https://app.test/api/vehicle')
+.then((response) => {
+    console.log('response')
+})
+.catch((error) => {
+    console.log('error')
+    
+})
 </script>
 
 <template>
   <div>
-    <button class="bg-blue-500">Save changes</button>
+    <button class="bg-blue-500" >Save </button>
   </div>
   <div
     class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
