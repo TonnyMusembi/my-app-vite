@@ -1,6 +1,6 @@
 <script setup>
 // import AppVue from '../App.vue';
-//let response = await
+let response = await
 fetch('https://app.test/api/vehicle')
 .then((response) => {
     console.log('response')
@@ -22,7 +22,7 @@ fetch('https://app.test/api/vehicle')
       <img class="h-12 w-12" src="../assets/logo.png" alt="ChitChat Logo" />
     </div>
     <div>
-      <div class="text-xl font-medium text-black">ChitChat</div>
+      <div class="text-xl font-medium text-black">Chat</div>
       <p class="text-slate-500">You have a new message!</p>
     </div>
   </div>
