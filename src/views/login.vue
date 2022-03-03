@@ -1,5 +1,7 @@
 <script setup>
 // import AppVue from '../App.vue';
+const ImgUrl = Image 
+document.getElementById
 </script>
 
 <template>
