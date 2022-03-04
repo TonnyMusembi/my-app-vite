@@ -15,16 +15,11 @@ const csrfurl = "http://project.test/sanctum/csrf-cookie";
 
 fetch(csrfurl, { credentials: "include" })
   .then((response) => {
-    fetch("loginurl", {
-      method: "POST",
-      body: "JSON stringify(_data)",
-    })
-     
+    console.log(response);
   })
   .catch((error) => {
     console.log(error);
   });
-  
 </script>
 
 <template>
@@ -35,14 +30,16 @@ fetch(csrfurl, { credentials: "include" })
     class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <div class="shrink-0">
-      <img class="h-12 w-12" src="../assets/logo.png" alt="Login" />
+      <img class="h-12 w-12" src=".../assets/logo.png" alt="Login" />
     </div>
     <div>
       <div class="text-xl font-medium text-black">Chat</div>
       <p class="text-slate-500">Register!</p>
     </div>
   </div>
-  <div class="container mx-auto px-4">
+  <div
+    class="p-6 max-w-md mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
+  >
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div class="mb-4">
         <label
@@ -76,8 +73,9 @@ fetch(csrfurl, { credentials: "include" })
       <div class="flex items-center justify-between">
         <button
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          type="button" onclick="login()"
-         >
+          type="button"
+          onclick="login()"
+        >
           Sign In
         </button>
         <a
