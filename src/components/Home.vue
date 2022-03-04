@@ -11,7 +11,7 @@ import axios from "axios";
 // },
 methods: {
     axios
-    .get('https://app.test/api/phones')
+    // .get('https://app.test/api/phones')
     .then((response) => {
         console.log(response)
     })

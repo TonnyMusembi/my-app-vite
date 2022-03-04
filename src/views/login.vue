@@ -1,50 +1,99 @@
 <script setup>
 // import AppVue from '../App.vue';
-let response = await
-fetch('https://app.test/api/vehicle')
-.then((response) => {
-    console.log('response')
-})
-.catch((error) => {
-    console.log('error')
-    
-})
+//let response = await
+// fetch("")
+//   .then((response) => {
+//     console.log("response");
+//   })
+//   .catch((error) => {
+//     console.log("error");
+//   });
+
+const loginurl = "http://project.test/api/login";
+
+const csrfurl = "http://project.test/sanctum/csrf-cookie";
+
+fetch(csrfurl, { credentials: "include" })
+  .then((response) => {
+    fetch("loginurl", {
+      method: "POST",
+      body: "JSON stringify(_data)",
+    })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 </script>
 
 <template>
-  <div>
-    <button class="bg-blue-500" >Save </button>
-  </div>
+  <!-- <div>
+    <button class="bg-blue-500">Save</button>
+  </div> -->
   <div
     class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <div class="shrink-0">
-      <img class="h-12 w-12" src="../assets/logo.png" alt="ChitChat Logo" />
+      <img class="h-12 w-12" src=".../assets/logo.png" alt="Login" />
     </div>
     <div>
       <div class="text-xl font-medium text-black">Chat</div>
-      <p class="text-slate-500">You have a new message!</p>
+      <p class="text-slate-500">Register!</p>
     </div>
   </div>
-  <div col="10">
-    <label>Name</label>
-    <input type="text" class="p-2 border rounded" />
-    <p />
+  <div class="w-full max-w-xs">
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <label
+          class="block text-gray-700 text-sm font-bold mb-2"
+          for="username"
+        >
+          Username
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="username"
+          type="text"
+          placeholder="Username"
+        />
+      </div>
+      <div class="mb-6">
+        <label
+          class="block text-gray-700 text-sm font-bold mb-2"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+          id="password"
+          type="password"
+          placeholder="******************"
+        />
+        <p class="text-red-500 text-xs italic">Please choose a password.</p>
+      </div>
+      <div class="flex items-center justify-between">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="button"
+        >
+          Sign In
+        </button>
+        <a
+          class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+          href="#"
+        >
+          Forgot Password?
+        </a>
+      </div>
+    </form>
+    <p class="text-center text-gray-500 text-xs">
+      &copy;2022 Tonny. All rights reserved.
+    </p>
   </div>
-  <div class="col-4">
-    <label class="block">
-      <span
-        class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700"
-      >
-        Email
-      </span>
-      <input
-        type="email"
-        name="email"
-        class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-        placeholder="you@example.com"
-      />
-    </label>
-  </div>
-  <div></div>
 </template>
