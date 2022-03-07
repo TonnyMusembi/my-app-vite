@@ -9,18 +9,20 @@ import axios from "axios";
 
 //     }
 // },
-methods: {
-    axios
-    // .get('https://app.test/api/phones')
-    .then((response) => {
-        console.log(response)
-    })
-    .catch((error) => {
-      console.log(error)
-      
-    })
 
-}
+
+const url='';
+
+fetch(url)
+.then((response) => {
+  console.log(response)
+})
+.then((error) => {
+  console.log(error)
+  
+})
+
+
 </script>
 <template>
   <div class="col-6">

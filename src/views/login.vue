@@ -1,13 +1,5 @@
 <script setup>
-// import AppVue from '../App.vue';
-//let response = await
-// fetch("")
-//   .then((response) => {
-//     console.log("response");
-//   })
-//   .catch((error) => {
-//     console.log("error");
-//   });
+
 
 const loginurl = "http://project.test/api/login";
 
@@ -15,7 +7,8 @@ const csrfurl = "http://project.test/sanctum/csrf-cookie";
 
 fetch(csrfurl, { credentials: "include" })
   .then((response) => {
-    console.log(response);
+    //console.log(response);
+    
   })
   .catch((error) => {
     console.log(error);
@@ -23,14 +16,11 @@ fetch(csrfurl, { credentials: "include" })
 </script>
 
 <template>
-  <!-- <div>
-    <button class="bg-blue-500">Save</button>
-  </div> -->
   <div
     class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <div class="shrink-0">
-      <img class="h-12 w-12" src=".../assets/logo.png" alt="Login" />
+      <img class="h-12 w-12" src="../assets/logo.png" alt="Login" />
     </div>
     <div>
       <div class="text-xl font-medium text-black">Chat</div>
@@ -38,7 +28,7 @@ fetch(csrfurl, { credentials: "include" })
     </div>
   </div>
   <div
-    class="p-6 max-w-md mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
+    class="p-6 container mx-auto   bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div class="mb-4">
@@ -81,11 +71,13 @@ fetch(csrfurl, { credentials: "include" })
         <a
           class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
           href="#"
+          onclick="forgot()"
         >
           Forgot Password?
         </a>
       </div>
     </form>
+
     <p class="text-center text-gray-500 text-xs">
       &copy;2022 Tonny. All rights reserved.
     </p>
