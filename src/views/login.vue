@@ -7,12 +7,26 @@ const csrfurl = "http://project.test/sanctum/csrf-cookie";
 
 fetch(csrfurl, { credentials: "include" })
   .then((response) => {
-    //console.log(response);
-    
+   console.log(response);
+
   })
   .catch((error) => {
     console.log(error);
   });
+
+
+const login="https://project.test/api/students";
+axios.post(login)
+.then((response) => {
+    console.log(response)
+    
+})
+.catch((error) => {
+    console.log(error)
+    
+})
+
+  
 </script>
 
 <template>
@@ -23,7 +37,7 @@ fetch(csrfurl, { credentials: "include" })
       <img class="h-12 w-12" src="../assets/logo.png" alt="Login" />
     </div>
     <div>
-      <div class="text-xl font-medium text-black">Chat</div>
+      <div class="text-xl font-medium text-black">App</div>
       <p class="text-slate-500">Register!</p>
     </div>
   </div>
@@ -82,4 +96,7 @@ fetch(csrfurl, { credentials: "include" })
       &copy;2022 Tonny. All rights reserved.
     </p>
   </div>
+  <div>
+  </div>
+
 </template>
