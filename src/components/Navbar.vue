@@ -1,6 +1,9 @@
 <script setup>
 
 
+const array=[];
+
+console.log(array)
 
 
 </script>
