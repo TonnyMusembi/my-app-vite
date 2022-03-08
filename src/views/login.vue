@@ -19,20 +19,12 @@ const array =[1,2,3];
  console.log(array)
 
 
-// const url =""
-// $ajax({
+// const token= Auth();
 
-//     url:"",
-//     type:'GET',
-//     success:function(response){
-//         consile.log(response)
-//     },
-//     error:function(error){
-//   console.log(error)
-//     }
-// });
 
- 
+//  Router.push(Home)
+
+
 
 
 </script>
@@ -105,6 +97,7 @@ const array =[1,2,3];
     </p>
   </div>
   <div>
+      <!-- <router-link to="/Home">Next</router-link> -->
   </div>
 
 </template>
