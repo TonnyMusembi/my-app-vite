@@ -14,19 +14,25 @@ fetch(csrfurl, { credentials: "include" })
     console.log(error);
   });
 
+const array =[1,2,3];
 
-const login="https://project.test/api/students";
-axios.post(login)
-.then((response) => {
-    console.log(response)
-    
-})
-.catch((error) => {
-    console.log(error)
-    
-})
+ console.log(array)
 
-  
+
+// const url =""
+// $ajax({
+
+//     url:"",
+//     type:'GET',
+//     success:function(response){
+//         consile.log(response)
+//     },
+//     error:function(error){
+//   console.log(error)
+//     }
+// });
+
+
 </script>
 
 <template>
