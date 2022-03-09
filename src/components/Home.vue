@@ -11,7 +11,7 @@ import axios from "axios";
 // },
 
 
-const url='';
+const url='http://project.test/api/students/';
 
 fetch(url)
 .then((response) => {

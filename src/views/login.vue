@@ -27,7 +27,7 @@ setTimeout("console.log('Do not do this')",1000 );
     class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <div class="shrink-0">
-      <img class="h-12 w-12" src=".../assets/logo.png" alt="Login" />
+      <img class="h-12 w-12" src="../assets/logo.png" alt="Login" />
     </div>
     <div>
       <div class="text-xl font-medium text-black">App</div>
@@ -90,7 +90,7 @@ setTimeout("console.log('Do not do this')",1000 );
     </p>
   </div>
   <div>
-      <router-link to="/Home"><button class="bg-blue">Login</button></router-link>
+      <router-link to="/Home"><button class="flex">Login</button></router-link>
   </div>
 
 </template>
