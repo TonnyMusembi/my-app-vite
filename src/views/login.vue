@@ -19,19 +19,16 @@ const array =[1,2,3];
  console.log(array)
 
 
-
-
-setTimeout("console.log('Do not do this')",10000 );
+setTimeout("console.log('Do not do this')",1000 );
 
 
 </script>
-
 <template>
   <div
     class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <div class="shrink-0">
-      <img class="h-12 w-12" src="../assets/logo.png" alt="Login" />
+      <img class="h-12 w-12" src=".../assets/logo.png" alt="Login" />
     </div>
     <div>
       <div class="text-xl font-medium text-black">App</div>
@@ -39,7 +36,7 @@ setTimeout("console.log('Do not do this')",10000 );
     </div>
   </div>
   <div
-    class="p-6 container mx-auto   bg-white rounded-xl shadow-lg flex items-center space-x-4"
+    class="p-6  max-wsm container  mx-auto   bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div class="mb-4">
@@ -95,19 +92,6 @@ setTimeout("console.log('Do not do this')",10000 );
   </div>
   <div>
       <!-- <router-link to="/Home">Next</router-link> -->
-  </div>
-<div>
-    <h2>Select</h2>
-    <select name="cars_id" @change="onChange($event)" class="form-select form-control">
-        <option>---- Select Car ----</option>
-        <option value="sonata_hybrid">Sonata Hybrid</option>
-        <option value="odyssey">Odyssey</option>
-        <option value="ford_mustang">Ford Mustang</option>
-        <option value="tesla_model">Tesla Model 3</option>
-        <option value="honda_accord">Honda Accord</option>
-        <option value="ford_expedition">Ford Expedition</option>
-        <option value="lincoln_navigator">Lincoln Navigator</option>
-    </select>
   </div>
 
 </template>
