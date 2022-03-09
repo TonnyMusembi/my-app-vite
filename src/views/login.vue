@@ -1,26 +1,21 @@
 <script setup>
-
-
 const loginurl = "http://project.test/api/login";
 
 const csrfurl = "http://project.test/sanctum/csrf-cookie";
 
 fetch(csrfurl, { credentials: "include" })
   .then((response) => {
-   console.log(response);
-
+    console.log(response);
   })
   .catch((error) => {
     console.log(error);
   });
 
-const array =[1,2,3];
+const array = [1, 2, 3];
 
- console.log(array)
+console.log(array);
 
-
-setTimeout("console.log('Do not do this')",1000 );
-
+setTimeout("console.log('Do not do this')", 1000);
 </script>
 <template>
   <div
@@ -35,7 +30,7 @@ setTimeout("console.log('Do not do this')",1000 );
     </div>
   </div>
   <div
-    class="p-6  max-wsm container  mx-auto   bg-white rounded-xl shadow-lg flex items-center space-x-4"
+    class="p-6 max-wsm container mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div class="mb-4">
@@ -90,7 +85,9 @@ setTimeout("console.log('Do not do this')",1000 );
     </p>
   </div>
   <div>
-      <router-link to="/Home"><button class="flex">Login</button></router-link>
+    <!-- <router-link to="/Home"><button class="flex">Login</button></router-link> -->
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    ></button>
   </div>
-
 </template>
