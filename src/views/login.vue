@@ -19,12 +19,9 @@ const array =[1,2,3];
  console.log(array)
 
 
-// const token= Auth();
 
 
-//  Router.push(Home)
-
-
+setTimeout("console.log('Do not do this')",10000 );
 
 
 </script>
@@ -98,6 +95,19 @@ const array =[1,2,3];
   </div>
   <div>
       <!-- <router-link to="/Home">Next</router-link> -->
+  </div>
+<div>
+    <h2>Select</h2>
+    <select name="cars_id" @change="onChange($event)" class="form-select form-control">
+        <option>---- Select Car ----</option>
+        <option value="sonata_hybrid">Sonata Hybrid</option>
+        <option value="odyssey">Odyssey</option>
+        <option value="ford_mustang">Ford Mustang</option>
+        <option value="tesla_model">Tesla Model 3</option>
+        <option value="honda_accord">Honda Accord</option>
+        <option value="ford_expedition">Ford Expedition</option>
+        <option value="lincoln_navigator">Lincoln Navigator</option>
+    </select>
   </div>
 
 </template>
