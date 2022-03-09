@@ -35,6 +35,8 @@ module.exports = {
         tableLayout: ['responsive', 'hover', 'focus'],
 
     },
-    plugins: [],
+    plugins: [
+        tableLayout = true,
+    ],
 
 };

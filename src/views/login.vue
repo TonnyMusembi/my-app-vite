@@ -21,7 +21,6 @@ const array =[1,2,3];
 
 setTimeout("console.log('Do not do this')",1000 );
 
-
 </script>
 <template>
   <div
@@ -91,7 +90,7 @@ setTimeout("console.log('Do not do this')",1000 );
     </p>
   </div>
   <div>
-      <!-- <router-link to="/Home">Next</router-link> -->
+      <router-link to="/Home"><button class="bg-blue">Login</button></router-link>
   </div>
 
 </template>
