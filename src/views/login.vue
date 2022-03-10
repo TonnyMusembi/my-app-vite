@@ -1,4 +1,6 @@
 <script setup>
+import axios from "axios";
+
 const loginurl = "http://project.test/api/login";
 
 const csrfurl = "http://project.test/sanctum/csrf-cookie";
@@ -16,6 +18,15 @@ const array = [1, 2, 3];
 console.log(array);
 
 setTimeout("console.log('Do not do this')", 1000);
+
+
+
+const forgot = "login()";
+ 
+ 
+  
+
+
 </script>
 <template>
   <div
@@ -25,7 +36,7 @@ setTimeout("console.log('Do not do this')", 1000);
       <img class="h-12 w-12" src="../assets/logo.png" alt="Login" />
     </div>
     <div>
-      <div class="text-xl font-medium text-black">App</div>
+      <div class="text-xl font-medium text-blue">App</div>
       <p class="text-slate-500">Register!</p>
     </div>
   </div>
@@ -66,14 +77,14 @@ setTimeout("console.log('Do not do this')", 1000);
         <button
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="button"
-          onclick="login()"
+          onClick="login()"
         >
           Sign In
         </button>
         <a
           class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
           href="#"
-          onclick="forgot()"
+          onClick="forgot()"
         >
           Forgot Password?
         </a>
@@ -85,7 +96,7 @@ setTimeout("console.log('Do not do this')", 1000);
     </p>
   </div>
   <div>
-    <!-- <router-link to="/Home"><button class="flex">Login</button></router-link> -->
+    <router-link to="/Home"><button class="flex">Login</button></router-link>
     <button
       class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
     ></button>
