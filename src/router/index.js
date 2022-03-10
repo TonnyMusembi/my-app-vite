@@ -7,7 +7,7 @@ const routes = [
 
     { path: '/Home', name: 'Home', component: Home },
     { path: '', name: 'Login', component: Login },
-    { path: '/Navbar', name: 'Navbar', component: Navbar }
+    //{ path: '/Navbar', name: 'Navbar', component: Navbar }
 
 
 

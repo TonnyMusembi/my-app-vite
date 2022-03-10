@@ -19,7 +19,7 @@ console.log(array);
 
 setTimeout("console.log('Do not do this')", 1000);
 
-const login = "https://app.test/api/towns";
+const login = "";
 
 fetch(login)
 .then((response) => {
