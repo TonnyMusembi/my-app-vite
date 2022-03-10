@@ -19,12 +19,17 @@ console.log(array);
 
 setTimeout("console.log('Do not do this')", 1000);
 
+const login = "https://app.test/api/towns";
+
+fetch(login)
+.then((response) => {
+  console.log(response)
+})
+.catch((error) => {
+  console.log(error)
+})
 
 
-const forgot = "login()";
- 
- 
-  
 
 
 </script>
@@ -36,7 +41,7 @@ const forgot = "login()";
       <img class="h-12 w-12" src="../assets/logo.png" alt="Login" />
     </div>
     <div>
-      <div class="text-xl font-medium text-blue">App</div>
+      <div class="text-xl font-medium text-green">App</div>
       <p class="text-slate-500">Register!</p>
     </div>
   </div>
@@ -77,7 +82,7 @@ const forgot = "login()";
         <button
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="button"
-          onClick="login()"
+          onClick="login"
         >
           Sign In
         </button>
