@@ -19,17 +19,11 @@ console.log(array);
 
 setTimeout("console.log('Do not do this')", 1000);
 
-const login = "";
-
-fetch(login)
-.then((response) => {
-  console.log(response)
-})
-.catch((error) => {
-  console.log(error)
-})
-
-
+var a;
+var b;
+a = 7;
+b = 8;
+console.log(a + b);
 
 
 </script>
@@ -42,7 +36,7 @@ fetch(login)
     </div>
     <div>
       <div class="text-xl font-medium text-green">App</div>
-      <p class="text-slate-500">Register!</p>
+      <p class="text-slate-500 text-blue">Register!</p>
     </div>
   </div>
   <div

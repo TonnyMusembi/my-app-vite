@@ -20,7 +20,7 @@ fetch(url)
   <div class="relative h-32 w-32 ...">
     <div class="absolute left-0 top-0 h-16 w-16 ...">01</div>
     <div>
-      <!-- </div>router-link to="/login">Home</router-link> -->
+      <!-- </div><router-link to="/login">Home</router-link> -->
     </div>
   </div>
   <form class="flex items-center space-x-6">
