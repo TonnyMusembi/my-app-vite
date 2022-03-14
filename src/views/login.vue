@@ -26,6 +26,8 @@ b = 8;
 console.log(a + b);
 
 
+
+
 </script>
 <template>
   <div
