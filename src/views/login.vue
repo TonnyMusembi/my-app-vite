@@ -1,5 +1,6 @@
 <script setup>
-import axios from "axios";
+import axios from  'axios'
+//import axios from "axios";
 
 const loginurl = "http://project.test/api/login";
 
@@ -27,6 +28,15 @@ console.log(a + b);
 
 
 
+const json = '{ "fruit": "pineapple", "fingers": 10 }';
+const obj = JSON.parse(json);
+console.log(obj.fruit, obj.fingers);
+
+console.log('test here')
+console.log('Test here')
+
+
+
 
 </script>
 <template>
@@ -34,7 +44,7 @@ console.log(a + b);
     class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <div class="shrink-0">
-      <img class="h-12 w-12" src="../assets/logo.png" alt="Login" />
+      <img class="h-12 w-12" src=".../assets/logo.png" alt="Login" />
     </div>
     <div>
       <div class="text-xl font-medium text-green">App</div>
@@ -101,5 +111,8 @@ console.log(a + b);
     <button
       class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
     ></button>
+  </div>
+  <div class="col m-4">
+<button type="submit" onClick="UserAction"> Search</button>
   </div>
 </template>
