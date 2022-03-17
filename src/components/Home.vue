@@ -1,37 +1,66 @@
 <script>
+
 import axios from "axios";
 
+//const url = "http://project.test/students/";
 
-const url = "";
+// fetch(url)
+const csrfurl = "http://project.test/sanctum/csrf-cookie";
 
-fetch(url)
+fetch(csrfurl, { credentials: "include" })
   .then((response) => {
     console.log(response);
   })
-  .then((error) => {
+  .catch((error) => {
     console.log(error);
   });
 
-  var a; 
-  var b ;
-  a=4;
-  b=5;
-  console.log(a+b)
+
+
+//const url ="http://project.test/api/students/"
+
+//fetch('url' ,{ credentials: "include" })
+axios.get('http://project.test/api/students/', { credentials: "include" })
+  .then((response) => {
+    console.log(response);
+  })
+ .catch((error) => {
+   console.log(error)
+   
+ })
+var a;
+var b;
+a = 4;
+b = 5;
+console.log(a + b);
+
+function update() {
+  var element = document.getElementById("myprogressBar");   
+  var width = 1;
+  var identity = setInterval(scene, 10);
+  function scene() {
+    if (width >= 100) {
+      clearInterval(identity);
+    } else {
+      width++; 
+      element.style.width = width + '%'; 
+    }
+  }
+}
+
 </script>
+
 <template>
-  <div class="col-6">
+  <div class="row"></div>
+  <div class="row">
     <button class="primary button">Login</button>
     <input type="text" class="p-2 border rounded" />
-  </div>
-  <div class="relative h-32 w-32 ...">
-    <div class="absolute left-0 top-0 h-16 w-16 ...">01</div>
-    
   </div>
   <form class="flex items-center space-x-6">
     <div class="shrink-0">
       <img
         class="h-16 w-16 object-cover rounded-full"
-        src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80"
+        src=""
         alt="Current profile photo"
       />
     </div>
@@ -64,14 +93,35 @@ fetch(url)
           <td class="border px-4 py-2">112</td>
         </tr>
         <tr>
-          <td class="border px-4 py-2">Intro to JavaScript</td>
-          <td class="border px-4 py-2">Chris</td>
-          <td class="border px-4 py-2">1,280</td>
+          <td class="border px-4 py-2"></td>
+          <td class="border px-4 py-2"></td>
+          <td class="border px-4 py-2"></td>
         </tr>
       </tbody>
     </table>
   </div>
-  <div>
-      <router-link to="/Navbar">Home</router-link>
-    </div>
+  <div class=" primary button">
+    <router-link to="/Navbar">Home</router-link>
+  </div>
+  <div id="Progress_Status">
+  <div id="myprogressBar"></div>
+</div>
 </template>
+<style scoped>
+
+
+#Progress_Status {
+  width: 50%;
+  background-color: #ddd;
+}
+  
+#myprogressBar {
+  width: 10%;
+  height: 35px;
+ position: center;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 32px;
+  color: black;
+}
+</style>

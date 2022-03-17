@@ -5,11 +5,7 @@ const array=[1 ,2,3 ,4];
 
 console.log(array)
 
-var func = function(){
-  
 
-
-}
 
 </script>
 <template>

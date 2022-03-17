@@ -1,4 +1,4 @@
-<scriptsetup>
+<script setup>
 
 
 

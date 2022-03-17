@@ -26,28 +26,52 @@ a = 7;
 b = 8;
 console.log(a + b);
 
-
-
 const json = '{ "fruit": "pineapple", "fingers": 10 }';
 const obj = JSON.parse(json);
 console.log(obj.fruit, obj.fingers);
 
-console.log('test here')
 console.log('Test here')
 
+const target = {a:1,b:2};
+
+console.log(target)
 
 
 
+const Susan = {
+  firstName: "Susan",
+  lastName: "Steward",
+  age: 14,
+  hobbies: {
+    hobby1: "singing",
+    hobby2: "dancing"
+  }
+};
+
+const {age, ...rest} = Susan;
+
+console.log(age, rest);
+const fetchData = async () => {
+  try {
+    const quotes = await fetch("http://project.test/api/books");
+    const response = await quotes.json();
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+fetchData();
 </script>
 <template>
   <div
     class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <div class="shrink-0">
-      <img class="h-12 w-12" src=".../assets/logo.png" alt="Login" />
+      <img class="h-12 w-12" src="../assets/logo.jpg" alt="Login" />
     </div>
     <div>
-      <div class="text-xl font-medium text-green">App</div>
+      <div class="text-xl font-medium text-green">Vite</div>
       <p class="text-slate-500 text-blue">Register!</p>
     </div>
   </div>
@@ -101,7 +125,6 @@ console.log('Test here')
         </a>
       </div>
     </form>
-
     <p class="text-center text-gray-500 text-xs">
       &copy;2022 Tonny. All rights reserved.
     </p>
@@ -113,6 +136,6 @@ console.log('Test here')
     ></button>
   </div>
   <div class="col m-4">
-<button type="submit" onClick="UserAction"> Search</button>
+<button type="submit" onClick="UserAction()"> Search</button>
   </div>
 </template>
