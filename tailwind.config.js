@@ -6,10 +6,15 @@ module.exports = {
         // },
         container: {
             center: true,
+            maxWidth: {
+                'md': '700px'
+            }
+
         },
         extend: {
             columns: {
                 "4xs": "14rem",
+
             },
         },
         screens: {
@@ -27,16 +32,20 @@ module.exports = {
             gray: "#8492a6",
             "gray-light": "#d3dce6",
         },
+
     },
 
     variants: {
         // ...
         //tableLayout: ['responsive'],
         tableLayout: ['responsive', 'hover', 'focus'],
+        objectFit: ['responsive', 'hover', 'focus'],
 
     },
     plugins: [
         tableLayout = true,
+        require('autoprefixer'),
+
     ],
 
 };

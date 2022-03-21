@@ -72,7 +72,7 @@ function update() {
       />
     </label>
   </form>
-  <div class="flex">
+  <div class="flex-center">
     <table class="table-auto">
       <thead>
         <tr>

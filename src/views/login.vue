@@ -1,5 +1,5 @@
 <script setup>
-import axios from  'axios'
+import axios from "axios";
 //import axios from "axios";
 
 const loginurl = "http://project.test/api/login";
@@ -30,13 +30,11 @@ const json = '{ "fruit": "pineapple", "fingers": 10 }';
 const obj = JSON.parse(json);
 console.log(obj.fruit, obj.fingers);
 
-console.log('Test here')
+console.log("Test here");
 
-const target = {a:1,b:2};
+const target = { a: 1, b: 2 };
 
-console.log(target)
-
-
+console.log(target);
 
 const Susan = {
   firstName: "Susan",
@@ -44,13 +42,14 @@ const Susan = {
   age: 14,
   hobbies: {
     hobby1: "singing",
-    hobby2: "dancing"
-  }
+    hobby2: "dancing",
+  },
 };
 
-const {age, ...rest} = Susan;
+const { age, ...rest } = Susan;
 
 console.log(age, rest);
+
 const fetchData = async () => {
   try {
     const quotes = await fetch("http://project.test/api/books");
@@ -65,18 +64,19 @@ fetchData();
 </script>
 <template>
   <div
-    class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
+    class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
   >
     <div class="shrink-0">
       <img class="h-12 w-12" src="../assets/logo.jpg" alt="Login" />
     </div>
     <div>
       <div class="text-xl font-medium text-green">Vite</div>
-      <p class="text-slate-500 text-blue">Register!</p>
+      <p class="text-slate-500 text-blue " >Register!</p>
     </div>
   </div>
+  <br />
   <div
-    class="p-6 max-wsm container mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
+    class="p-7 max-wsm container mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-7"
   >
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div class="mb-4">
@@ -109,13 +109,16 @@ fetchData();
         <p class="text-red-500 text-xs italic">Please Enter password.</p>
       </div>
       <div class="flex items-center justify-between">
-        <button
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          type="button"
-          onClick="login"
-        >
-          Sign In
-        </button>
+        <div class="flex items-center justify-center">
+          <router-link to="/Home">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Login
+            </button>
+          </router-link>
+        </div>
+        <br />
         <a
           class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
           href="#"
@@ -125,17 +128,20 @@ fetchData();
         </a>
       </div>
     </form>
+    <p></p>
     <p class="text-center text-gray-500 text-xs">
       &copy;2022 Tonny. All rights reserved.
     </p>
   </div>
-  <div>
-    <router-link to="/Home"><button class="flex">Login</button></router-link>
+  <br />
+  <!-- <div class='flex items-center justify-center'>
+    <router-link to="/Home">
     <button
-      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-    ></button>
-  </div>
-  <div class="col m-4">
-<button type="submit" onClick="UserAction()"> Search</button>
-  </div>
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded  " 
+    > Next</button>
+    </router-link>
+  </div> -->
+  <!-- <div class='flex items-center justify-center'>
+<button> Search</button>
+  </div> -->
 </template>
