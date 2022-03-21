@@ -16,6 +16,9 @@ module.exports = {
                 "4xs": "14rem",
 
             },
+            animation: {
+                'spin-slow': 'spin 3s linear infinite',
+            },
         },
         screens: {
             sm: "480px",

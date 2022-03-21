@@ -51,29 +51,13 @@ function update() {
 </script>
 
 <template>
-  <div class="row"></div>
-  <div class="row">
+  <!-- <div class="row">
     <button class="primary button">Login</button>
     <input type="text" class="p-2 border rounded" />
-  </div>
-  <form class="flex items-center space-x-6">
-    <div class="shrink-0">
-      <img
-        class="h-16 w-16 object-cover rounded-full"
-        src=""
-        alt="Current profile photo"
-      />
-    </div>
-    <label class="block">
-      <span class="sr-only">Choose profile photo</span>
-      <input
-        type="file"
-        class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"
-      />
-    </label>
-  </form>
-  <div class="flex-center">
-    <table class="table-auto">
+  </div> -->
+  
+  <div class="center">
+    <table class="tabl-auto">
       <thead>
         <tr>
           <th class="px-4 py-2">Title</th>
@@ -106,9 +90,12 @@ function update() {
   <div id="Progress_Status">
   <div id="myprogressBar"></div>
 </div>
+
+<svg class="animate-bounce w-6 h-6 ...">
+  <!-- ... -->
+</svg>
 </template>
 <style scoped>
-
 
 #Progress_Status {
   width: 50%;
