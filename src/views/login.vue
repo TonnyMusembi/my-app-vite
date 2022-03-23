@@ -61,6 +61,33 @@ const fetchData = async () => {
 };
 
 fetchData();
+
+
+
+
+
+
+const plants =["kale","sukuma","mango"];
+
+ const popped =plants.pop();
+ console.log(popped);
+ console.log(plants);
+
+
+const words =["new","long","pop","pesa"];
+
+const result=words.filter(
+  value=>4
+);
+console.log(result);
+
+
+
+
+
+
+
+
 </script>
 <template>
   <div
@@ -76,7 +103,7 @@ fetchData();
   </div>
   <br />
   <div
-    class="p-7 max-wsm container mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-7"
+    class="p-7 max-wsm container  mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-7"
   >
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div class="mb-4">
@@ -144,4 +171,4 @@ fetchData();
   <!-- <div class='flex items-center justify-center'>
 <button> Search</button>
   </div> -->
-</template>
+  </template>

@@ -4,13 +4,13 @@ module.exports = {
         // maxWidth: {
 
         // },
-        container: {
-            center: true,
-            maxWidth: {
-                'md': '700px'
-            }
+        // container: {
+        //     center: true,
+        //     // maxWidth: {
+        //     //     'md': '700px'
+        //     // }
 
-        },
+        // },
         extend: {
             columns: {
                 "4xs": "14rem",
