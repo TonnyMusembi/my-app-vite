@@ -16,10 +16,6 @@ fetch(csrfurl, { credentials: "include" })
   });
 
 
-
-//const url ="http://project.test/api/students/"
-
-//fetch('url' ,{ credentials: "include" })
 axios.get('http://project.test/api/students/', { credentials: "include" })
   .then((response) => {
     console.log(response);
@@ -28,11 +24,11 @@ axios.get('http://project.test/api/students/', { credentials: "include" })
    console.log(error)
    
  })
-var a;
-var b;
-a = 4;
-b = 5;
-console.log(a + b);
+// var a;
+// var b;
+// a = 4;
+// b = 5;
+// console.log(a + b);
 
 function update() {
   var element = document.getElementById("myprogressBar");   
@@ -47,7 +43,6 @@ function update() {
     }
   }
 }
-
 </script>
 
 <template>
